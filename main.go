@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, Functions!")
 	methods()
 	interfaces()
+
+	func(age int) {
+		fmt.Println("Anonymous function: age", age)
+	}(22)
 }
