@@ -9,4 +9,6 @@ func main() {
 	func(age int) {
 		fmt.Println("Anonymous function: age", age)
 	}(22)
+
+	expression()
 }
