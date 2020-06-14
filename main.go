@@ -11,4 +11,6 @@ func main() {
 	}(22)
 
 	expression()
+
+	callbacks()
 }
