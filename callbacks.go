@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"fmt"
 )
 
@@ -25,21 +24,10 @@ func sum(num ...int) int {
 	}
 
 	return total
-
-	context.TODO()
 }
-
-// context.TODO()
-
-var err = r.client.Get(context.TODO(), types.NamespacedName{Name: ingressName, Namespace: instance.Namespace}, found)
-
-// TODO: dsasad
 
 func even(f func(xi ...int) int, vi ...int) int {
 	var eints []int
-
-	err := r.client.Get(context.TODO(), types.NamespacedName{Name: ingressName, Namespace: instance.Namespace}, found)
-
 	for _, v := range vi {
 		if v%2 == 0 {
 			eints = append(eints, v)
